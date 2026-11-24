@@ -45,7 +45,7 @@ def main():
             x, y, w, h = face.left(), face.top(), face.width(), face.height()
             
             # Draw a bounding box around the detected face
-            cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+            cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 200, 10), 2)
 
             # Predict the 5 facial landmarks (Right eye, Left eye, Nose tip, etc.)
             shape = predictor(gray, face)

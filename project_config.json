@@ -1,0 +1,54 @@
+{
+  "camera": {
+    "index": 0,
+    "backend": "DSHOW",
+    "width": 640,
+    "height": 480,
+    "fps": 30,
+    "flip_horizontal": true
+  },
+  "safety_dms": {
+    "ear_threshold": 0.2,
+    "ear_duration_sec": 1.5,
+    "mar_threshold": 0.5,
+    "mar_duration_sec": 1.5,
+    "gaze_left_threshold": 0.25,
+    "gaze_right_threshold": 0.75,
+    "gaze_duration_sec": 2,
+    "alarm_cooldown_sec": 2
+  },
+  "ipc": {
+    "host": "127.0.0.1",
+    "port": 5055
+  },
+  "control": {
+    "debounce_frames": 3,
+    "command_send_hz": 20
+  },
+  "assets": {
+    "dlib_shape_predictor_5": "shape_predictor_5_face_landmarks.dat",
+    "dlib_shape_predictor_68": "shape_predictor_68_face_landmarks.dat",
+    "alarm_sound_sleep": null,
+    "alarm_sound_yawn": null,
+    "alarm_sound_gaze": null
+  },
+  "gestures": {
+    "face": {
+      "ema_alpha": 0.45,
+      "yaw_deadzone": 0.09,
+      "pitch_up_deadzone": 0.07,
+      "pitch_down_deadzone": 0.08
+    },
+    "hand": {
+      "ema_alpha": 0.45,
+      "deadzone_x": 0.12,
+      "deadzone_y": 0.12
+    },
+    "eye": {
+      "ema_alpha": 0.45,
+      "deadzone_x": 0.12,
+      "deadzone_y": 0.11,
+      "closed_ear_threshold": 0.19
+    }
+  }
+}

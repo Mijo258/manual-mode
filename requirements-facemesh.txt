@@ -1,0 +1,8 @@
+# Master controller / 478-point driver monitoring, tested with Python 3.11.
+# Uses MediaPipe Tasks FaceLandmarker and face-landmark-project/face_landmarker.task.
+# Install in .venv, separately from the dlib projects. Only install one OpenCV
+# distribution here: opencv-contrib-python provides cv2 and the desktop GUI.
+# These are the runtime versions verified together; no legacy Solutions API is used.
+mediapipe==1.2.3
+numpy==2.4.6
+opencv-contrib-python==5.1.0.95
